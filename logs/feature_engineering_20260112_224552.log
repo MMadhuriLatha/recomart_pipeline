@@ -1,0 +1,8 @@
+2026-01-12 22:45:52 - feature_engineering - INFO - [logger.py:58] - Starting feature_engineering
+2026-01-12 22:45:52 - feature_engineering - INFO - [feature_engineer.py:147] - Creating similarity features
+2026-01-12 22:45:52 - feature_engineering - INFO - [feature_engineer.py:164] - Computed similarity matrix: (500, 500)
+2026-01-12 22:45:52 - feature_engineering - INFO - [logger.py:65] - Completed feature_engineering in 0.02s
+2026-01-12 22:45:52 - feature_engineering - INFO - [feature_engineer.py:228] - Similarity features created: (500, 500)
+2026-01-12 22:45:52 - feature_engineering - INFO - [feature_engineer.py:235] - All features saved to the feature store
+2026-01-12 22:45:52 - feature_engineering - INFO - [feature_engineer.py:237] - Feature engineering pipeline completed successfully
+2026-01-12 22:45:52 - feature_engineering - INFO - [logger.py:65] - Completed feature_engineering in 0.72s

@@ -1,0 +1,6 @@
+2026-01-13 21:13:23 - streaming_ingestion - INFO - [logger.py:58] - Starting streaming_ingestion
+2026-01-13 21:13:23 - streaming_ingestion - INFO - [streaming_ingestion.py:24] - Connecting to RabbitMQ queue: user_interactions
+2026-01-13 21:13:23 - streaming_ingestion - INFO - [streaming_ingestion.py:46] - Starting to consume messages...
+2026-01-13 21:13:23 - streaming_ingestion - INFO - [streaming_ingestion.py:54] - Ingested 50 messages from RabbitMQ
+2026-01-13 21:13:23 - streaming_ingestion - INFO - [streaming_ingestion.py:60] - Saved streaming data to: data\raw\streaming\2026\01\13\interactions\interactions_20260113_211323.csv
+2026-01-13 21:13:23 - streaming_ingestion - INFO - [logger.py:65] - Completed streaming_ingestion in 0.13s

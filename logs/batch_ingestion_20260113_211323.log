@@ -1,0 +1,8 @@
+2026-01-13 21:13:23 - batch_ingestion - INFO - [logger.py:58] - Starting batch_ingestion
+2026-01-13 21:13:23 - batch_ingestion - INFO - [batch_ingestion.py:17] - Running batch update for CSV data
+2026-01-13 21:13:23 - batch_ingestion - INFO - [batch_ingestion.py:25] - Batch updated interactions: 10050 records
+2026-01-13 21:13:23 - batch_ingestion - INFO - [batch_ingestion.py:26] - Saved to: data\raw\user_behavior_batch\2026\01\13\interactions\interactions_20260113_211323.csv
+2026-01-13 21:13:23 - batch_ingestion - INFO - [batch_ingestion.py:29] - Running batch update for API data
+2026-01-13 21:13:24 - batch_ingestion - INFO - [batch_ingestion.py:52] - Batch updated products: 20 records
+2026-01-13 21:13:24 - batch_ingestion - INFO - [batch_ingestion.py:53] - Saved to: data\raw\product_api\2026\01\13\catalog\catalog_20260113_211324.json
+2026-01-13 21:13:24 - batch_ingestion - INFO - [logger.py:65] - Completed batch_ingestion in 0.67s

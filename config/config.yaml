@@ -1,0 +1,69 @@
+# RecoMart Pipeline Configuration
+
+project:
+  name: "RecoMart Recommendation Pipeline"
+  version: "1.0.0"
+  
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  features: "data/features"
+  models: "data/models"
+  logs: "logs"
+
+data_sources:
+  user_interactions:
+    type: "csv"
+    path: "data/raw/user_interactions.csv"
+    format: "csv"
+  
+  product_catalog:
+    type: "api"
+    url: "https://fakestoreapi.com/products"
+    format: "json"
+
+validation:
+  rating_min: 1
+  rating_max: 5
+  required_columns:
+    user_interactions: ["user_id", "item_id", "rating", "timestamp"]
+    products: ["product_id", "name", "category", "price"]
+
+feature_engineering:
+  user_features:
+    - "avg_rating"
+    - "interaction_count"
+    - "rating_variance"
+  
+  item_features:
+    - "avg_item_rating"
+    - "popularity_score"
+    - "price_normalized"
+
+model:
+  type: "svd"
+  n_factors: 50
+  n_epochs: 20
+  lr_all: 0.005
+  reg_all: 0.02
+  random_state: 42
+  
+evaluation:
+  test_size: 0.2
+  metrics:
+    - "rmse"
+    - "mae"
+    - "precision@k"
+    - "recall@k"
+  k: 10
+
+mlflow:
+  tracking_uri: "sqlite:///mlflow.db"
+  experiment_name: "recomart_recommender"
+
+storage:
+  type: "local"  # or "s3"
+  partitioning:
+    - "source"
+    - "date"
+    - "type"

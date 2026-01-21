@@ -1,0 +1,14 @@
+2026-01-12 22:51:02 - model_training - INFO - [logger.py:58] - Starting model_training
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:50] - Starting model training
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:60] - Matrix shape: (999, 500)
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:68] - Performing SVD with 50 factors
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:76] - Model training completed
+2026-01-12 22:51:02 - model_training - INFO - [logger.py:65] - Completed model_training in 0.11s
+2026-01-12 22:51:02 - model_training - INFO - [logger.py:58] - Starting model_training
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:157] - Evaluating model
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:176] - RMSE: 2.4437
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:177] - MAE: 1.9871
+2026-01-12 22:51:02 - model_training - INFO - [logger.py:65] - Completed model_training in 0.13s
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:270] - Model training and evaluation completed
+2026-01-12 22:51:02 - model_training - INFO - [recommender.py:271] - Model saved to: data\models\recommender_model.pkl
+2026-01-12 22:51:02 - model_training - INFO - [logger.py:65] - Completed model_training in 1.14s

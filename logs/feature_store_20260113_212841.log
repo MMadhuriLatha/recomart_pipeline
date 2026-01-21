@@ -1,0 +1,14 @@
+2026-01-13 21:28:41 - feature_store - INFO - [logger.py:58] - Starting feature_store
+2026-01-13 21:28:41 - feature_store - INFO - [logger.py:58] - Starting feature_store
+2026-01-13 21:28:41 - feature_store - INFO - [feature_store.py:64] - Registered feature: user_features_v1
+2026-01-13 21:28:41 - feature_store - INFO - [logger.py:65] - Completed feature_store in 0.00s
+2026-01-13 21:28:41 - feature_store - INFO - [feature_store.py:106] - Saved feature user_features version v1
+2026-01-13 21:28:41 - feature_store - INFO - [feature_store.py:107] - Shape: (1000, 11), Path: data\features\user_features\v1\user_features_20260113_212841.parquet
+2026-01-13 21:28:41 - feature_store - INFO - [logger.py:65] - Completed feature_store in 0.02s
+2026-01-13 21:28:41 - feature_store - INFO - [logger.py:58] - Starting feature_store
+2026-01-13 21:28:41 - feature_store - INFO - [logger.py:58] - Starting feature_store
+2026-01-13 21:28:41 - feature_store - INFO - [feature_store.py:64] - Registered feature: item_features_v1
+2026-01-13 21:28:41 - feature_store - INFO - [logger.py:65] - Completed feature_store in 0.00s
+2026-01-13 21:28:41 - feature_store - INFO - [feature_store.py:106] - Saved feature item_features version v1
+2026-01-13 21:28:41 - feature_store - INFO - [feature_store.py:107] - Shape: (500, 11), Path: data\features\item_features\v1\item_features_20260113_212841.parquet
+2026-01-13 21:28:41 - feature_store - INFO - [logger.py:65] - Completed feature_store in 0.02s

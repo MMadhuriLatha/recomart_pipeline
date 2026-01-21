@@ -1,0 +1,31 @@
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:144] - Starting data cleaning. Initial shape: (10100, 6)
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:79] - Removed 140 duplicate records
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.02s
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:50] - Dropped 99 rows with missing rating
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.00s
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:167] - TEST>>>>>>>>>>>>>>>>>>>>>>>> Filtered invalid ratings. Removed 20 rows. Remaining rows: 9841
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:134] - Extracted temporal features from timestamp
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.02s
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:181] - Cleaning completed. Final shape: (9841, 11)
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:184] - Saved cleaned data to: data\processed\interactions_cleaned_20260113_211324.parquet
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.15s
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:191] - Starting product cleaning. Initial shape: (20, 8)
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:79] - Removed 0 duplicate records
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.00s
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.00s
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:95] - Encoded category: 4 unique values
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.00s
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:58] - Starting data_preparation
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:112] - Normalized price: range [7.95, 999.99]
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.00s
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:207] - Product cleaning completed. Final shape: (20, 10)
+2026-01-13 21:13:24 - data_preparation - INFO - [data_cleaner.py:210] - Saved cleaned products to: data\processed\products_cleaned_20260113_211324.parquet
+2026-01-13 21:13:24 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.03s
