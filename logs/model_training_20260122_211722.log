@@ -1,0 +1,3 @@
+2026-01-22 21:17:22 - model_training - INFO - [logger.py:58] - Starting model_training
+2026-01-22 21:17:22 - model_training - INFO - [recommender.py:240] - Starting training pipeline for collaborative model
+2026-01-22 21:17:22 - model_training - INFO - [recommender.py:253] - Train size: 7832, Test size: 1959

@@ -1,0 +1,6 @@
+2026-01-22 21:17:35 - model_training - INFO - [logger.py:58] - Starting model_training
+2026-01-22 21:17:35 - model_training - INFO - [recommender.py:51] - Starting model training
+2026-01-22 21:17:35 - model_training - INFO - [recommender.py:61] - Matrix shape: (1000, 500)
+2026-01-22 21:17:35 - model_training - INFO - [recommender.py:69] - Performing SVD with 50 factors
+2026-01-22 21:17:36 - model_training - INFO - [recommender.py:77] - Model training completed
+2026-01-22 21:17:36 - model_training - INFO - [logger.py:65] - Completed model_training in 0.52s

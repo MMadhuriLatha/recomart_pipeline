@@ -3,3 +3,6 @@
 2026-01-22 21:16:51 - batch_ingestion - INFO - [batch_ingestion.py:25] - Batch updated interactions: 10050 records
 2026-01-22 21:16:51 - batch_ingestion - INFO - [batch_ingestion.py:26] - Saved to: data\raw\user_behavior_batch\2026\01\22\interactions\interactions_20260122_211651.csv
 2026-01-22 21:16:51 - batch_ingestion - INFO - [batch_ingestion.py:29] - Running batch update for API data
+2026-01-22 21:16:53 - batch_ingestion - INFO - [batch_ingestion.py:55] - Batch updated products: 20 records
+2026-01-22 21:16:53 - batch_ingestion - INFO - [batch_ingestion.py:56] - Saved to: data\raw\product_api\2026\01\22\catalog\catalog_20260122_211653.json
+2026-01-22 21:16:53 - batch_ingestion - INFO - [logger.py:65] - Completed batch_ingestion in 1.96s

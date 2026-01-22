@@ -1,0 +1,15 @@
+2026-01-22 21:17:36 - model_training - INFO - [logger.py:58] - Starting model_training
+2026-01-22 21:17:36 - model_training - INFO - [recommender.py:158] - Evaluating model
+2026-01-22 21:17:36 - model_training - INFO - [recommender.py:177] - RMSE: 2.4195
+2026-01-22 21:17:36 - model_training - INFO - [recommender.py:178] - MAE: 1.9694
+2026-01-22 21:17:36 - model_training - INFO - [logger.py:65] - Completed model_training in 0.31s
+2026-01-22 21:17:36 - model_training - INFO - [logger.py:65] - Completed model_training in 13.99s
+2026-01-22 21:17:36 - model_training - INFO - [logger.py:58] - Starting model_training
+2026-01-22 21:17:36 - model_training - INFO - [recommender.py:240] - Starting training pipeline for content_based model
+2026-01-22 21:17:37 - model_training - INFO - [recommender.py:321] - Sample recommendations for item 1:    item_id  similarity_score
+0       13          0.064681
+1        4          0.039631
+2        2          0.035208
+3       18          0.030775
+4        3          0.029997
+2026-01-22 21:17:37 - model_training - INFO - [logger.py:65] - Completed model_training in 0.60s
