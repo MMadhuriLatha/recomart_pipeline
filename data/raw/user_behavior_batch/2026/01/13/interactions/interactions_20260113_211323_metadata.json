@@ -1,0 +1,8 @@
+{
+  "source": "user_behavior_batch",
+  "type": "interactions",
+  "format": "csv",
+  "timestamp": "20260113_211323",
+  "path": "data\\raw\\user_behavior_batch\\2026\\01\\13\\interactions\\interactions_20260113_211323.csv",
+  "rows": 10050
+}

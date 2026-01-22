@@ -1,0 +1,24 @@
+{
+  "features": {
+    "user_features_v1": {
+      "name": "user_features",
+      "description": "User-level aggregated features",
+      "type": "user",
+      "source": "user_interactions",
+      "transformation": "Aggregation and statistical features by user_id",
+      "version": "v1",
+      "registered_at": "2026-01-22T22:12:32.612052",
+      "status": "active"
+    },
+    "item_features_v1": {
+      "name": "item_features",
+      "description": "Item-level aggregated features",
+      "type": "item",
+      "source": "user_interactions",
+      "transformation": "Aggregation and popularity calculations by item_id",
+      "version": "v1",
+      "registered_at": "2026-01-22T22:12:32.633284",
+      "status": "active"
+    }
+  }
+}

@@ -1,17 +1,18 @@
 {
-  "timestamp": "2026-01-22T21:17:01.350327",
+  "timestamp": "2026-01-22T22:12:31.572942",
   "dataset_info": {
-    "rows": 10050,
-    "columns": 5,
-    "memory_usage_mb": 1.5
+    "rows": 10100,
+    "columns": 6,
+    "memory_usage_mb": 1.97
   },
   "schema": {
     "has_required_columns": true,
     "missing_columns": [],
     "extra_columns": [
+      "event_type",
       "extra_column"
     ],
-    "total_columns": 5
+    "total_columns": 6
   },
   "missing_values": {
     "total_missing": 100,
@@ -19,14 +20,14 @@
       "rating": 100
     },
     "missing_percentages": {
-      "rating": 1.0
+      "rating": 0.99
     },
-    "rows_with_any_missing": 100
+    "rows_with_any_missing": 10100
   },
   "duplicates": {
-    "total_duplicates": 278,
-    "duplicate_percentage": 2.77,
-    "unique_rows": 10000
+    "total_duplicates": 295,
+    "duplicate_percentage": 2.92,
+    "unique_rows": 10049
   },
   "rating_range": {
     "column": "rating",
@@ -51,8 +52,8 @@
   "statistics": {
     "unique_users": 1000,
     "unique_items": 500,
-    "avg_rating": 2.9785929648241205,
-    "rating_std": 1.418557998392824
+    "avg_rating": 2.9777,
+    "rating_std": 1.4193675247859667
   },
-  "quality_score": 81.03
+  "quality_score": 80.89
 }

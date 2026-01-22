@@ -1,0 +1,8 @@
+{
+  "source": "streaming",
+  "type": "interactions",
+  "format": "csv",
+  "timestamp": "20260122_084816",
+  "path": "data\\raw\\streaming\\2026\\01\\22\\interactions\\interactions_20260122_084816.csv",
+  "rows": 50
+}

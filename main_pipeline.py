@@ -399,7 +399,7 @@ def orchestrator():
         print_header("PIPELINE COMPLETED SUCCESSFULLY ✓")
     
         print("\nNext Steps:")
-        print("1. Review data quality report: reports/data_quality_report.json")
+        print("1. Review data quality report: reports/data_quality_report_after_cleaning.pdf")
         print("2. Check MLflow experiments: mlflow ui")
         print("3. Set up Airflow DAG: orchestration/airflow_dag.py")
         print("4. Version data with DVC")
