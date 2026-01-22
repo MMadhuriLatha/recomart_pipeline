@@ -1,0 +1,8 @@
+{
+  "source": "product_api",
+  "type": "catalog",
+  "format": "json",
+  "timestamp": "20260115_003919",
+  "path": "data\\raw\\product_api\\2026\\01\\15\\catalog\\catalog_20260115_003919.json",
+  "rows": 20
+}

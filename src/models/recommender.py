@@ -212,10 +212,9 @@ class RecommenderTrainer:
     
     def __init__(self, mlflow_tracking_uri: str = 'sqlite:///mlflow.db',
                  experiment_name: str = 'recomart_recommender'):
-        mlflow.set_tracking_uri("http://127.0.0.1:5000")
-        #self.mlflow_tracking_uri = mlflow_tracking_uri
+        self.mlflow_tracking_uri = mlflow_tracking_uri
         self.experiment_name = experiment_name
-        #mlflow.set_tracking_uri(mlflow_tracking_uri)
+        mlflow.set_tracking_uri(mlflow_tracking_uri)
         mlflow.set_experiment(experiment_name)
         self.logger_name = 'model_training'
     

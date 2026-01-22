@@ -1,0 +1,10 @@
+2026-01-21 22:54:28 - api_ingestion - INFO - [logger.py:58] - Starting api_ingestion
+2026-01-21 22:54:28 - api_ingestion - INFO - [logger.py:58] - Starting api_ingestion
+2026-01-21 22:54:28 - api_ingestion - INFO - [api_ingestion.py:38] - Fetching data from https://fakestoreapi.com/products (attempt 1)
+2026-01-21 22:54:30 - api_ingestion - INFO - [api_ingestion.py:51] - Response status code: 200
+2026-01-21 22:54:30 - api_ingestion - INFO - [api_ingestion.py:69] - Successfully fetched 20 records
+2026-01-21 22:54:30 - api_ingestion - INFO - [logger.py:65] - Completed api_ingestion in 1.12s
+2026-01-21 22:54:30 - api_ingestion - INFO - [api_ingestion.py:125] - Converted to DataFrame: (20, 7)
+2026-01-21 22:54:30 - api_ingestion - INFO - [api_ingestion.py:126] - Columns: ['id', 'title', 'price', 'description', 'category', 'image', 'rating']
+2026-01-21 22:54:30 - api_ingestion - INFO - [api_ingestion.py:135] - Saved API data to: data\raw\product_api\2026\01\21\catalog\catalog_20260121_225430.json
+2026-01-21 22:54:30 - api_ingestion - INFO - [logger.py:65] - Completed api_ingestion in 1.13s

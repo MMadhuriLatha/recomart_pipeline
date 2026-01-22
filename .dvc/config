@@ -1,0 +1,5 @@
+[core]
+    analytics = false
+    remote = project_storage
+['remote "project_storage"']
+    url = ../dvc_storage
