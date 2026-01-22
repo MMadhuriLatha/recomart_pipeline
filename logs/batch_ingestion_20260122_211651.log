@@ -1,0 +1,5 @@
+2026-01-22 21:16:51 - batch_ingestion - INFO - [logger.py:58] - Starting batch_ingestion
+2026-01-22 21:16:51 - batch_ingestion - INFO - [batch_ingestion.py:17] - Running batch update for CSV data
+2026-01-22 21:16:51 - batch_ingestion - INFO - [batch_ingestion.py:25] - Batch updated interactions: 10050 records
+2026-01-22 21:16:51 - batch_ingestion - INFO - [batch_ingestion.py:26] - Saved to: data\raw\user_behavior_batch\2026\01\22\interactions\interactions_20260122_211651.csv
+2026-01-22 21:16:51 - batch_ingestion - INFO - [batch_ingestion.py:29] - Running batch update for API data

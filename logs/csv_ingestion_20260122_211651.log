@@ -1,0 +1,12 @@
+2026-01-22 21:16:51 - csv_ingestion - INFO - [logger.py:58] - Starting csv_ingestion
+2026-01-22 21:16:51 - csv_ingestion - INFO - [csv_ingestion.py:76] - Generating sample user interaction data with intentional data quality issues
+2026-01-22 21:16:51 - csv_ingestion - INFO - [csv_ingestion.py:115] - Generated 10050 sample interactions with data quality issues
+2026-01-22 21:16:51 - csv_ingestion - INFO - [csv_ingestion.py:116] - Saved to: data\batch\user_interactions.csv
+2026-01-22 21:16:51 - csv_ingestion - INFO - [logger.py:65] - Completed csv_ingestion in 0.20s
+2026-01-22 21:16:51 - csv_ingestion - INFO - [logger.py:58] - Starting csv_ingestion
+2026-01-22 21:16:51 - csv_ingestion - INFO - [csv_ingestion.py:35] - Attempting to ingest data/batch/user_interactions.csv (attempt 1)
+2026-01-22 21:16:51 - csv_ingestion - INFO - [csv_ingestion.py:39] - Successfully loaded 10050 rows from data/batch/user_interactions.csv
+2026-01-22 21:16:51 - csv_ingestion - INFO - [csv_ingestion.py:40] - Columns: ['user_id', 'item_id', 'rating', 'timestamp', 'extra_column']
+2026-01-22 21:16:51 - csv_ingestion - INFO - [csv_ingestion.py:41] - Shape: (10050, 5)
+2026-01-22 21:16:51 - csv_ingestion - INFO - [csv_ingestion.py:50] - Saved raw data to: data\raw\user_behavior_batch\2026\01\22\interactions\interactions_20260122_211651.csv
+2026-01-22 21:16:51 - csv_ingestion - INFO - [logger.py:65] - Completed csv_ingestion in 0.14s

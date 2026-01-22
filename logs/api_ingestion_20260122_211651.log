@@ -1,0 +1,3 @@
+2026-01-22 21:16:51 - api_ingestion - INFO - [logger.py:58] - Starting api_ingestion
+2026-01-22 21:16:51 - api_ingestion - INFO - [logger.py:58] - Starting api_ingestion
+2026-01-22 21:16:51 - api_ingestion - INFO - [api_ingestion.py:38] - Fetching data from https://fakestoreapi.com/products (attempt 1)

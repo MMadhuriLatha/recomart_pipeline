@@ -1,0 +1,4 @@
+2026-01-22 21:17:01 - data_validation - INFO - [logger.py:58] - Starting data_validation
+2026-01-22 21:17:01 - data_validation - INFO - [data_validator.py:105] - Validating user interaction data
+2026-01-22 21:17:01 - data_validation - INFO - [data_validator.py:157] - Validation completed. Quality score: 81.03/100
+2026-01-22 21:17:01 - data_validation - INFO - [logger.py:65] - Completed data_validation in 0.06s

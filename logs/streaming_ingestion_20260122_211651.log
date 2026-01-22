@@ -1,0 +1,3 @@
+2026-01-22 21:16:51 - streaming_ingestion - INFO - [logger.py:58] - Starting streaming_ingestion
+2026-01-22 21:16:51 - streaming_ingestion - INFO - [streaming_ingestion.py:24] - Connecting to RabbitMQ queue: user_interactions
+2026-01-22 21:16:51 - streaming_ingestion - INFO - [streaming_ingestion.py:46] - Starting to consume messages...

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-13T21:28:40.292535",
+  "timestamp": "2026-01-22T21:17:02.031678",
   "dataset_info": {
     "rows": 9791,
     "columns": 10,
@@ -10,10 +10,10 @@
     "missing_columns": [],
     "extra_columns": [
       "day",
-      "year",
-      "hour",
-      "month",
       "is_weekend",
+      "month",
+      "hour",
+      "year",
       "dayofweek"
     ],
     "total_columns": 10
@@ -48,7 +48,7 @@
     "unique_users": 1000,
     "unique_items": 500,
     "avg_rating": 2.9753855581656623,
-    "rating_std": 1.4141799010721074
+    "rating_std": 1.4141799010721072
   },
   "quality_score": 100.0
 }

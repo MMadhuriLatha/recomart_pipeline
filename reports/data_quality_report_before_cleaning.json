@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-01-13T21:28:40.065107",
+  "timestamp": "2026-01-22T21:17:01.350327",
   "dataset_info": {
     "rows": 10050,
     "columns": 5,
-    "memory_usage_mb": 1.66
+    "memory_usage_mb": 1.5
   },
   "schema": {
     "has_required_columns": true,
