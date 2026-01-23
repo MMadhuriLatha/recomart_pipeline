@@ -1,0 +1,26 @@
+{"timestamp":"2026-01-22T14:50:21.373323Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T14:50:21.373690Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T14:50:23.260966Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T14:50:23.261112Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T14:50:23.261602Z","level":"info","event":"Current task name:train","logger":"task.stdout"}
+{"timestamp":"2026-01-22T14:50:23.261675Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T14:50:23.263427Z","level":"info","event":"Starting model training...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T14:50:23.504925Z","level":"error","event":"2026/01/22 20:20:23 INFO mlflow.store.db.utils: Creating initial MLflow database tables...","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.505575Z","level":"error","event":"2026/01/22 20:20:23 INFO mlflow.store.db.utils: Updating database tables","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.509489Z","level":"error","event":"2026/01/22 20:20:23 INFO alembic.runtime.migration: Context impl SQLiteImpl.","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.509904Z","level":"error","event":"2026/01/22 20:20:23 INFO alembic.runtime.migration: Will assume non-transactional DDL.","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.534906Z","level":"error","event":"2026/01/22 20:20:23 INFO alembic.runtime.migration: Context impl SQLiteImpl.","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.535508Z","level":"error","event":"2026/01/22 20:20:23 INFO alembic.runtime.migration: Will assume non-transactional DDL.","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.543720Z","level":"error","event":"2026-01-22 20:20:23 - model_training - INFO - [logger.py:58] - Starting model_training","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.543745Z","level":"info","event":"Starting model_training","logger":"model_training","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T14:50:23.544623Z","level":"error","event":"2026-01-22 20:20:23 - model_training - INFO - [recommender.py:256] - Starting training pipeline for collaborative model","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.544622Z","level":"info","event":"Starting training pipeline for collaborative model","logger":"model_training","filename":"recommender.py","lineno":256}
+{"timestamp":"2026-01-22T14:50:23.549316Z","level":"error","event":"2026-01-22 20:20:23 - model_training - INFO - [recommender.py:269] - Train size: 7928, Test size: 1982","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:23.549316Z","level":"info","event":"Train size: 7928, Test size: 1982","logger":"model_training","filename":"recommender.py","lineno":269}
+{"timestamp":"2026-01-22T14:50:24.032232Z","level":"error","event":"2026-01-22 20:20:24 - model_training - INFO - [recommender.py:57] - Starting model training","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:24.032240Z","level":"info","event":"Starting model training","logger":"model_training","filename":"recommender.py","lineno":57}
+{"timestamp":"2026-01-22T14:50:24.046017Z","level":"error","event":"2026-01-22 20:20:24 - model_training - INFO - [recommender.py:70] - Matrix shape: (1000, 500)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:24.046012Z","level":"info","event":"Matrix shape: (1000, 500)","logger":"model_training","filename":"recommender.py","lineno":70}
+{"timestamp":"2026-01-22T14:50:24.046857Z","level":"error","event":"2026-01-22 20:20:24 - model_training - INFO - [recommender.py:73] - Starting TruncatedSVD computation","logger":"task.stderr"}
+{"timestamp":"2026-01-22T14:50:24.046857Z","level":"info","event":"Starting TruncatedSVD computation","logger":"model_training","filename":"recommender.py","lineno":73}
+{"timestamp":"2026-01-22T15:00:30.393551Z","level":"error","event":"Process terminated by signal. For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#process-terminated-by-signal.","signal":-2,"signal_name":"SIGINT","logger":"task"}

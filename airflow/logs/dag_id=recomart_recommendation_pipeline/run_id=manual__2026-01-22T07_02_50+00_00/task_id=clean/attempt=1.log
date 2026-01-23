@@ -1,0 +1,42 @@
+{"timestamp":"2026-01-22T07:03:15.671258Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T07:03:15.671551Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T07:03:17.653915Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-01-22T07:03:17.705492Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T07:03:17.705614Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T07:03:17.706256Z","level":"info","event":"Current task name:clean","logger":"task.stdout"}
+{"timestamp":"2026-01-22T07:03:17.706315Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T07:03:17.707309Z","level":"info","event":"Starting data cleaning...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T07:03:17.721799Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [logger.py:58] - Starting data_preparation","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.721712Z","level":"info","event":"Starting data_preparation","logger":"data_preparation","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T07:03:17.722877Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [data_cleaner.py:144] - Starting data cleaning. Initial shape: (9910, 4)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.722816Z","level":"info","event":"Starting data cleaning. Initial shape: (9910, 4)","logger":"data_preparation","filename":"data_cleaner.py","lineno":144}
+{"timestamp":"2026-01-22T07:03:17.724815Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [logger.py:58] - Starting data_preparation","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.724811Z","level":"info","event":"Starting data_preparation","logger":"data_preparation","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T07:03:17.727126Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [data_cleaner.py:79] - Removed 0 duplicate records","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.727125Z","level":"info","event":"Removed 0 duplicate records","logger":"data_preparation","filename":"data_cleaner.py","lineno":79}
+{"timestamp":"2026-01-22T07:03:17.728418Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.00s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.728416Z","level":"info","event":"Completed data_preparation in 0.00s","logger":"data_preparation","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T07:03:17.731285Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [logger.py:58] - Starting data_preparation","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.731284Z","level":"info","event":"Starting data_preparation","logger":"data_preparation","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T07:03:17.733125Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.00s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.733105Z","level":"info","event":"Completed data_preparation in 0.00s","logger":"data_preparation","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T07:03:17.734899Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [data_cleaner.py:167] - TEST>>>>>>>>>>>>>>>>>>>>>>>> Filtered invalid ratings. Removed 0 rows. Remaining rows: 9910","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.734888Z","level":"info","event":"TEST>>>>>>>>>>>>>>>>>>>>>>>> Filtered invalid ratings. Removed 0 rows. Remaining rows: 9910","logger":"data_preparation","filename":"data_cleaner.py","lineno":167}
+{"timestamp":"2026-01-22T07:03:17.737027Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [logger.py:58] - Starting data_preparation","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.737020Z","level":"info","event":"Starting data_preparation","logger":"data_preparation","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T07:03:17.744209Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [data_cleaner.py:134] - Extracted temporal features from timestamp","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.744192Z","level":"info","event":"Extracted temporal features from timestamp","logger":"data_preparation","filename":"data_cleaner.py","lineno":134}
+{"timestamp":"2026-01-22T07:03:17.745533Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.01s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.745533Z","level":"info","event":"Completed data_preparation in 0.01s","logger":"data_preparation","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T07:03:17.746439Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [data_cleaner.py:181] - Cleaning completed. Final shape: (9910, 10)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.746435Z","level":"info","event":"Cleaning completed. Final shape: (9910, 10)","logger":"data_preparation","filename":"data_cleaner.py","lineno":181}
+{"timestamp":"2026-01-22T07:03:17.782386Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [data_cleaner.py:184] - Saved cleaned data to: data/processed/interactions_cleaned_20260122_123317.parquet","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.782323Z","level":"info","event":"Saved cleaned data to: data/processed/interactions_cleaned_20260122_123317.parquet","logger":"data_preparation","filename":"data_cleaner.py","lineno":184}
+{"timestamp":"2026-01-22T07:03:17.783535Z","level":"error","event":"2026-01-22 12:33:17 - data_preparation - INFO - [logger.py:65] - Completed data_preparation in 0.06s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T07:03:17.783520Z","level":"info","event":"Completed data_preparation in 0.06s","logger":"data_preparation","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T07:03:17.790330Z","level":"info","event":"Cleaned data: 9910 records","logger":"task.stdout"}
+{"timestamp":"2026-01-22T07:03:17.790674Z","level":"info","event":"Done. Returned value was: 9910","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T07:03:17.790802Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019be483-9697-751b-9c55-4e5b2246bd6e'), task_id='clean', dag_id='recomart_recommendation_pipeline', run_id='manual__2026-01-22T07:02:50+00:00', try_number=1, dag_version_id=UUID('019be483-4b20-7641-8635-67f364380c0a'), map_index=-1, hostname='apinto-mbp', context_carrier={}, task=<Task(PythonOperator): clean>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 1, 22, 7, 3, 15, 253464, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1357}
+{"timestamp":"2026-01-22T07:03:17.803815Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T07:03:17.803905Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T07:03:17.804486Z","level":"info","event":"Task operator:<Task(PythonOperator): clean>","logger":"task.stdout"}

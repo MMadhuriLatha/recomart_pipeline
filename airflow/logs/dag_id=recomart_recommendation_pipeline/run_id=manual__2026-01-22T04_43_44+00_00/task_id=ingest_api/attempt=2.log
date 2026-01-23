@@ -1,0 +1,34 @@
+{"timestamp":"2026-01-22T05:08:59.941143Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T05:08:59.941491Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T05:09:01.501844Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-01-22T05:09:01.817052Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:09:01.817235Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:09:01.817755Z","level":"info","event":"Current task name:ingest_api","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:09:01.817798Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:09:01.818631Z","level":"info","event":"Starting API data ingestion...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:09:01.821667Z","level":"error","event":"2026-01-22 10:39:01 - api_ingestion - INFO - [logger.py:58] - Starting api_ingestion","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:01.821675Z","level":"info","event":"Starting api_ingestion","logger":"api_ingestion","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T05:09:01.824030Z","level":"error","event":"2026-01-22 10:39:01 - api_ingestion - INFO - [logger.py:58] - Starting api_ingestion","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:01.824023Z","level":"info","event":"Starting api_ingestion","logger":"api_ingestion","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T05:09:01.824951Z","level":"error","event":"2026-01-22 10:39:01 - api_ingestion - INFO - [api_ingestion.py:38] - Fetching data from https://fakestoreapi.com/products (attempt 1)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:01.824892Z","level":"info","event":"Fetching data from https://fakestoreapi.com/products (attempt 1)","logger":"api_ingestion","filename":"api_ingestion.py","lineno":38}
+{"timestamp":"2026-01-22T05:09:02.394050Z","level":"error","event":"2026-01-22 10:39:02 - api_ingestion - INFO - [api_ingestion.py:51] - Response status code: 200","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:02.394032Z","level":"info","event":"Response status code: 200","logger":"api_ingestion","filename":"api_ingestion.py","lineno":51}
+{"timestamp":"2026-01-22T05:09:02.395101Z","level":"error","event":"2026-01-22 10:39:02 - api_ingestion - INFO - [api_ingestion.py:69] - Successfully fetched 20 records","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:02.395097Z","level":"info","event":"Successfully fetched 20 records","logger":"api_ingestion","filename":"api_ingestion.py","lineno":69}
+{"timestamp":"2026-01-22T05:09:02.396590Z","level":"error","event":"2026-01-22 10:39:02 - api_ingestion - INFO - [logger.py:65] - Completed api_ingestion in 0.57s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:02.396587Z","level":"info","event":"Completed api_ingestion in 0.57s","logger":"api_ingestion","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T05:09:02.399884Z","level":"error","event":"2026-01-22 10:39:02 - api_ingestion - INFO - [api_ingestion.py:125] - Converted to DataFrame: (20, 7)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:02.399884Z","level":"info","event":"Converted to DataFrame: (20, 7)","logger":"api_ingestion","filename":"api_ingestion.py","lineno":125}
+{"timestamp":"2026-01-22T05:09:02.400772Z","level":"error","event":"2026-01-22 10:39:02 - api_ingestion - INFO - [api_ingestion.py:126] - Columns: ['id', 'title', 'price', 'description', 'category', 'image', 'rating']","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:02.400769Z","level":"info","event":"Columns: ['id', 'title', 'price', 'description', 'category', 'image', 'rating']","logger":"api_ingestion","filename":"api_ingestion.py","lineno":126}
+{"timestamp":"2026-01-22T05:09:02.404741Z","level":"error","event":"2026-01-22 10:39:02 - api_ingestion - INFO - [api_ingestion.py:135] - Saved API data to: data/raw/product_api/2026/01/22/catalog/catalog_20260122_103902.json","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:02.404717Z","level":"info","event":"Saved API data to: data/raw/product_api/2026/01/22/catalog/catalog_20260122_103902.json","logger":"api_ingestion","filename":"api_ingestion.py","lineno":135}
+{"timestamp":"2026-01-22T05:09:02.406373Z","level":"error","event":"2026-01-22 10:39:02 - api_ingestion - INFO - [logger.py:65] - Completed api_ingestion in 0.58s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:09:02.406357Z","level":"info","event":"Completed api_ingestion in 0.58s","logger":"api_ingestion","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T05:09:02.415446Z","level":"info","event":"Ingested 20 products","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:09:02.415494Z","level":"info","event":"Done. Returned value was: data/raw/product_api/2026/01/22/catalog/catalog_20260122_103902.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T05:09:02.415591Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019be41b-1502-7956-a8f6-9b56ec2d464e'), task_id='ingest_api', dag_id='recomart_recommendation_pipeline', run_id='manual__2026-01-22T04:43:44+00:00', try_number=2, dag_version_id=UUID('019be403-d3b1-7598-97fa-b6894e3d00a9'), map_index=-1, hostname='apinto-mbp', context_carrier={}, task=<Task(PythonOperator): ingest_api>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=3, start_date=datetime.datetime(2026, 1, 22, 5, 8, 59, 441111, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1357}
+{"timestamp":"2026-01-22T05:09:02.422552Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:09:02.422604Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:09:02.423226Z","level":"info","event":"Task operator:<Task(PythonOperator): ingest_api>","logger":"task.stdout"}

@@ -1,0 +1,21 @@
+{"timestamp":"2026-01-22T06:14:32.711317Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T06:14:32.711597Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T06:14:34.279490Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-01-22T06:14:34.309179Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:14:34.309270Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:14:34.309684Z","level":"info","event":"Current task name:train","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:14:34.309714Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:14:34.311013Z","level":"info","event":"Starting model training...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:14:34.845265Z","level":"error","event":"2026-01-22 11:44:34 - model_training - INFO - [logger.py:58] - Starting model_training","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:14:34.845206Z","level":"info","event":"Starting model_training","logger":"model_training","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T06:14:34.846229Z","level":"error","event":"2026-01-22 11:44:34 - model_training - INFO - [recommender.py:251] - Starting training pipeline for collaborative model","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:14:34.846220Z","level":"info","event":"Starting training pipeline for collaborative model","logger":"model_training","filename":"recommender.py","lineno":251}
+{"timestamp":"2026-01-22T06:14:34.851500Z","level":"error","event":"2026-01-22 11:44:34 - model_training - INFO - [recommender.py:264] - Train size: 7928, Test size: 1982","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:14:34.851494Z","level":"info","event":"Train size: 7928, Test size: 1982","logger":"model_training","filename":"recommender.py","lineno":264}
+{"timestamp":"2026-01-22T06:14:35.023277Z","level":"error","event":"2026-01-22 11:44:35 - model_training - INFO - [recommender.py:56] - Starting model training","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:14:35.023295Z","level":"info","event":"Starting model training","logger":"model_training","filename":"recommender.py","lineno":56}
+{"timestamp":"2026-01-22T06:14:35.036194Z","level":"error","event":"2026-01-22 11:44:35 - model_training - INFO - [recommender.py:70] - Matrix shape: (1000, 500)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:14:35.036186Z","level":"info","event":"Matrix shape: (1000, 500)","logger":"model_training","filename":"recommender.py","lineno":70}
+{"timestamp":"2026-01-22T06:14:35.037096Z","level":"error","event":"2026-01-22 11:44:35 - model_training - INFO - [recommender.py:78] - Performing SVD with 50 factors","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:14:35.037100Z","level":"info","event":"Performing SVD with 50 factors","logger":"model_training","filename":"recommender.py","lineno":78}
+{"timestamp":"2026-01-22T06:23:49.428775Z","level":"error","event":"Process terminated by signal. For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#process-terminated-by-signal.","signal":-2,"signal_name":"SIGINT","logger":"task"}

@@ -1,0 +1,35 @@
+{"timestamp":"2026-01-22T06:28:21.610389Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T06:28:21.610667Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T06:28:23.125027Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-01-22T06:28:23.134801Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.134870Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.135209Z","level":"info","event":"Current task name:validate","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.135255Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.135979Z","level":"info","event":"Starting data validation...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.144317Z","level":"error","event":"2026-01-22 11:58:23 - data_validation - INFO - [logger.py:58] - Starting data_validation","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:23.144325Z","level":"info","event":"Starting data_validation","logger":"data_validation","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T06:28:23.145110Z","level":"error","event":"2026-01-22 11:58:23 - data_validation - INFO - [data_validator.py:105] - Validating user interaction data","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:23.145111Z","level":"info","event":"Validating user interaction data","logger":"data_validation","filename":"data_validator.py","lineno":105}
+{"timestamp":"2026-01-22T06:28:23.151111Z","level":"error","event":"2026-01-22 11:58:23 - data_validation - INFO - [data_validator.py:157] - Validation completed. Quality score: 100.0/100","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:23.151122Z","level":"info","event":"Validation completed. Quality score: 100.0/100","logger":"data_validation","filename":"data_validator.py","lineno":157}
+{"timestamp":"2026-01-22T06:28:23.151946Z","level":"error","event":"2026-01-22 11:58:23 - data_validation - INFO - [logger.py:65] - Completed data_validation in 0.01s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:23.151945Z","level":"info","event":"Completed data_validation in 0.01s","logger":"data_validation","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T06:28:23.152634Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152709Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152742Z","level":"info","event":"DATA QUALITY REPORT","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152766Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152789Z","level":"info","event":"Quality Score: 100.0/100","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152811Z","level":"info","event":"Total Rows: 9,910","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152833Z","level":"info","event":"Total Columns: 4","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152879Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152906Z","level":"info","event":"Missing Values: 0","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152930Z","level":"info","event":"Duplicate Records: 0","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152966Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.152992Z","level":"info","event":"Report saved to: reports/data_quality_report.json","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.153016Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.157008Z","level":"info","event":"Data quality score: 100.0/100","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.157277Z","level":"info","event":"Done. Returned value was: 100.0","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T06:28:23.157378Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019be463-a48f-7282-b639-2e9fdf3d1528'), task_id='validate', dag_id='recomart_recommendation_pipeline', run_id='manual__2026-01-22T06:28:13+00:00', try_number=1, dag_version_id=UUID('019be463-76a8-72eb-8a68-4289b61bd85f'), map_index=-1, hostname='apinto-mbp', context_carrier={}, task=<Task(PythonOperator): validate>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 1, 22, 6, 28, 21, 206181, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1357}
+{"timestamp":"2026-01-22T06:28:23.166452Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.166532Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:23.166888Z","level":"info","event":"Task operator:<Task(PythonOperator): validate>","logger":"task.stdout"}

@@ -1,0 +1,46 @@
+{"timestamp":"2026-01-22T18:15:03.256840Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T18:15:03.257162Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T18:15:04.842173Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:04.842272Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:04.842910Z","level":"info","event":"Current task name:train","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:04.842984Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:04.843787Z","level":"info","event":"Starting model training...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:05.218198Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [logger.py:58] - Starting model_training","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.218181Z","level":"info","event":"Starting model_training","logger":"model_training","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T18:15:05.218968Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:241] - Starting training pipeline for collaborative model","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.218967Z","level":"info","event":"Starting training pipeline for collaborative model","logger":"model_training","filename":"recommender.py","lineno":241}
+{"timestamp":"2026-01-22T18:15:05.221397Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:254] - Train size: 7928, Test size: 1982","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.221394Z","level":"info","event":"Train size: 7928, Test size: 1982","logger":"model_training","filename":"recommender.py","lineno":254}
+{"timestamp":"2026-01-22T18:15:05.406916Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [logger.py:58] - Starting model_training","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.406933Z","level":"info","event":"Starting model_training","logger":"model_training","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T18:15:05.407741Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:51] - Starting model training","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.407741Z","level":"info","event":"Starting model training","logger":"model_training","filename":"recommender.py","lineno":51}
+{"timestamp":"2026-01-22T18:15:05.416030Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:61] - Matrix shape: (1000, 500)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.416019Z","level":"info","event":"Matrix shape: (1000, 500)","logger":"model_training","filename":"recommender.py","lineno":61}
+{"timestamp":"2026-01-22T18:15:05.416729Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:69] - Performing SVD with 20 factors","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.416730Z","level":"info","event":"Performing SVD with 20 factors","logger":"model_training","filename":"recommender.py","lineno":69}
+{"timestamp":"2026-01-22T18:15:05.431434Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:77] - Model training completed","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.431429Z","level":"info","event":"Model training completed","logger":"model_training","filename":"recommender.py","lineno":77}
+{"timestamp":"2026-01-22T18:15:05.432624Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [logger.py:65] - Completed model_training in 0.03s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.432624Z","level":"info","event":"Completed model_training in 0.03s","logger":"model_training","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T18:15:05.435062Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [logger.py:58] - Starting model_training","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.435057Z","level":"info","event":"Starting model_training","logger":"model_training","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T18:15:05.435886Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:158] - Evaluating model","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.435883Z","level":"info","event":"Evaluating model","logger":"model_training","filename":"recommender.py","lineno":158}
+{"timestamp":"2026-01-22T18:15:05.478067Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:177] - RMSE: 2.4047","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.478058Z","level":"info","event":"RMSE: 2.4047","logger":"model_training","filename":"recommender.py","lineno":177}
+{"timestamp":"2026-01-22T18:15:05.478967Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [recommender.py:178] - MAE: 1.9430","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.478958Z","level":"info","event":"MAE: 1.9430","logger":"model_training","filename":"recommender.py","lineno":178}
+{"timestamp":"2026-01-22T18:15:05.480081Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [logger.py:65] - Completed model_training in 0.05s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.480076Z","level":"info","event":"Completed model_training in 0.05s","logger":"model_training","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T18:15:05.553259Z","level":"info","event":"🏃 View run bustling-zebra-120 at: http://127.0.0.1:5000/#/experiments/1/runs/780aaafe2a5642f5841057708ea68112","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:05.553337Z","level":"info","event":"🧪 View experiment at: http://127.0.0.1:5000/#/experiments/1","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:05.557614Z","level":"error","event":"2026-01-22 23:45:05 - model_training - INFO - [logger.py:65] - Completed model_training in 0.34s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:15:05.557613Z","level":"info","event":"Completed model_training in 0.34s","logger":"model_training","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T18:15:05.568283Z","level":"info","event":"Model trained - RMSE: 2.4047","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:05.568335Z","level":"info","event":"Model trained - MAE: 1.9430","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:05.568495Z","level":"info","event":"Done. Returned value was: {'rmse': 2.404691848444154, 'mae': 1.942986881937437, 'n_predictions': 1982}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T18:15:05.568707Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019be6ea-bb96-7d22-bdde-0125232794f1'), task_id='train', dag_id='recomart_recommendation_pipeline', run_id='manual__2026-01-22T18:14:08+00:00', try_number=2, dag_version_id=UUID('019be483-4b20-7641-8635-67f364380c0a'), map_index=-1, hostname='apinto-mbp', context_carrier={}, task=<Task(PythonOperator): train>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=3, start_date=datetime.datetime(2026, 1, 22, 18, 15, 2, 788392, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1357}
+{"timestamp":"2026-01-22T18:15:05.576340Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:05.576388Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:05.577073Z","level":"info","event":"Task operator:<Task(PythonOperator): train>","logger":"task.stdout"}

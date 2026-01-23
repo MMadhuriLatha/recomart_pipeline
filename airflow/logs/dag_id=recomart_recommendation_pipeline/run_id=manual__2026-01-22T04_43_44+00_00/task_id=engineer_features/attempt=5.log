@@ -1,0 +1,57 @@
+{"timestamp":"2026-01-22T05:19:13.026812Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T05:19:13.027093Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T05:19:14.437871Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-01-22T05:19:14.452380Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:19:14.452461Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:19:14.452900Z","level":"info","event":"Current task name:engineer_features","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:19:14.452952Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:19:14.453661Z","level":"info","event":"Starting feature engineering...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T05:19:14.556876Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:58] - Starting feature_engineering","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.556864Z","level":"info","event":"Starting feature_engineering","logger":"feature_engineering","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T05:19:14.557706Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:203] - Starting complete feature engineering pipeline","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.557692Z","level":"info","event":"Starting complete feature engineering pipeline","logger":"feature_engineering","filename":"feature_engineer.py","lineno":203}
+{"timestamp":"2026-01-22T05:19:14.559668Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:58] - Starting feature_engineering","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.559659Z","level":"info","event":"Starting feature_engineering","logger":"feature_engineering","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T05:19:14.560496Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:30] - Creating user features","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.560492Z","level":"info","event":"Creating user features","logger":"feature_engineering","filename":"feature_engineer.py","lineno":30}
+{"timestamp":"2026-01-22T05:19:14.569923Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:66] - Created 11 user features for 1000 users","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.569918Z","level":"info","event":"Created 11 user features for 1000 users","logger":"feature_engineering","filename":"feature_engineer.py","lineno":66}
+{"timestamp":"2026-01-22T05:19:14.571415Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:65] - Completed feature_engineering in 0.01s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.571336Z","level":"info","event":"Completed feature_engineering in 0.01s","logger":"feature_engineering","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T05:19:14.572219Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:207] - User features created: (1000, 11)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.572219Z","level":"info","event":"User features created: (1000, 11)","logger":"feature_engineering","filename":"feature_engineer.py","lineno":207}
+{"timestamp":"2026-01-22T05:19:14.574548Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:58] - Starting feature_engineering","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.574551Z","level":"info","event":"Starting feature_engineering","logger":"feature_engineering","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T05:19:14.575415Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:81] - Creating item features","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.575411Z","level":"info","event":"Creating item features","logger":"feature_engineering","filename":"feature_engineer.py","lineno":81}
+{"timestamp":"2026-01-22T05:19:14.578304Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:116] - Created 8 item features for 500 items","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.578304Z","level":"info","event":"Created 8 item features for 500 items","logger":"feature_engineering","filename":"feature_engineer.py","lineno":116}
+{"timestamp":"2026-01-22T05:19:14.579480Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:65] - Completed feature_engineering in 0.01s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.579490Z","level":"info","event":"Completed feature_engineering in 0.01s","logger":"feature_engineering","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T05:19:14.580337Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:211] - Item features created: (500, 8)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.580340Z","level":"info","event":"Item features created: (500, 8)","logger":"feature_engineering","filename":"feature_engineer.py","lineno":211}
+{"timestamp":"2026-01-22T05:19:14.582316Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:58] - Starting feature_engineering","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.582314Z","level":"info","event":"Starting feature_engineering","logger":"feature_engineering","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T05:19:14.583285Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:127] - Creating interaction features","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.583283Z","level":"info","event":"Creating interaction features","logger":"feature_engineering","filename":"feature_engineer.py","lineno":127}
+{"timestamp":"2026-01-22T05:19:14.587379Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:138] - Created interaction features. Total columns: 30","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.587376Z","level":"info","event":"Created interaction features. Total columns: 30","logger":"feature_engineering","filename":"feature_engineer.py","lineno":138}
+{"timestamp":"2026-01-22T05:19:14.588545Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:65] - Completed feature_engineering in 0.01s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.588540Z","level":"info","event":"Completed feature_engineering in 0.01s","logger":"feature_engineering","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T05:19:14.589349Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:219] - Interaction features created: (9910, 30)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.589346Z","level":"info","event":"Interaction features created: (9910, 30)","logger":"feature_engineering","filename":"feature_engineer.py","lineno":219}
+{"timestamp":"2026-01-22T05:19:14.591145Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:58] - Starting feature_engineering","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.591140Z","level":"info","event":"Starting feature_engineering","logger":"feature_engineering","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T05:19:14.591857Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:171] - Creating temporal features","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.591852Z","level":"info","event":"Creating temporal features","logger":"feature_engineering","filename":"feature_engineer.py","lineno":171}
+{"timestamp":"2026-01-22T05:19:14.721216Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:190] - Temporal features created","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.721201Z","level":"info","event":"Temporal features created","logger":"feature_engineering","filename":"feature_engineer.py","lineno":190}
+{"timestamp":"2026-01-22T05:19:14.722390Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:65] - Completed feature_engineering in 0.13s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.722392Z","level":"info","event":"Completed feature_engineering in 0.13s","logger":"feature_engineering","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T05:19:14.723239Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:223] - Temporal features added: (9910, 33)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.723215Z","level":"info","event":"Temporal features added: (9910, 33)","logger":"feature_engineering","filename":"feature_engineer.py","lineno":223}
+{"timestamp":"2026-01-22T05:19:14.725627Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [logger.py:58] - Starting feature_engineering","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.725620Z","level":"info","event":"Starting feature_engineering","logger":"feature_engineering","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T05:19:14.726524Z","level":"error","event":"2026-01-22 10:49:14 - feature_engineering - INFO - [feature_engineer.py:147] - Creating similarity features","logger":"task.stderr"}
+{"timestamp":"2026-01-22T05:19:14.726527Z","level":"info","event":"Creating similarity features","logger":"feature_engineering","filename":"feature_engineer.py","lineno":147}
+{"timestamp":"2026-01-22T05:34:06.545520Z","level":"error","event":"Process terminated by signal. For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#process-terminated-by-signal.","signal":-2,"signal_name":"SIGINT","logger":"task"}

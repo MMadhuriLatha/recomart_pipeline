@@ -1,0 +1,38 @@
+{"timestamp":"2026-01-22T18:14:22.623000Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T18:14:22.623253Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T18:14:24.172796Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:14:24.172902Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:14:24.173340Z","level":"info","event":"Current task name:ingest_csv","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:14:24.173386Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:14:24.174254Z","level":"info","event":"Starting CSV data ingestion...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:14:24.176111Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [logger.py:58] - Starting csv_ingestion","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.176121Z","level":"info","event":"Starting csv_ingestion","logger":"csv_ingestion","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T18:14:24.176849Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [csv_ingestion.py:76] - Generating sample user interaction data","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.176847Z","level":"info","event":"Generating sample user interaction data","logger":"csv_ingestion","filename":"csv_ingestion.py","lineno":76}
+{"timestamp":"2026-01-22T18:14:24.177322Z","level":"warning","event":"'H' is deprecated and will be removed in a future version, please use 'h' instead.","category":"FutureWarning","filename":"/Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/src/ingestion/csv_ingestion.py","lineno":88,"logger":"py.warnings"}
+{"timestamp":"2026-01-22T18:14:24.196055Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [csv_ingestion.py:99] - Generated 9910 sample interactions","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.196053Z","level":"info","event":"Generated 9910 sample interactions","logger":"csv_ingestion","filename":"csv_ingestion.py","lineno":99}
+{"timestamp":"2026-01-22T18:14:24.196701Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [csv_ingestion.py:100] - Saved to: data/raw/user_interactions.csv","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.196698Z","level":"info","event":"Saved to: data/raw/user_interactions.csv","logger":"csv_ingestion","filename":"csv_ingestion.py","lineno":100}
+{"timestamp":"2026-01-22T18:14:24.197576Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [logger.py:65] - Completed csv_ingestion in 0.02s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.197572Z","level":"info","event":"Completed csv_ingestion in 0.02s","logger":"csv_ingestion","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T18:14:24.202429Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [logger.py:58] - Starting csv_ingestion","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.202426Z","level":"info","event":"Starting csv_ingestion","logger":"csv_ingestion","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T18:14:24.203136Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [csv_ingestion.py:35] - Attempting to ingest data/raw/user_interactions.csv (attempt 1)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.203131Z","level":"info","event":"Attempting to ingest data/raw/user_interactions.csv (attempt 1)","logger":"csv_ingestion","filename":"csv_ingestion.py","lineno":35}
+{"timestamp":"2026-01-22T18:14:24.207241Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [csv_ingestion.py:39] - Successfully loaded 9910 rows from data/raw/user_interactions.csv","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.207239Z","level":"info","event":"Successfully loaded 9910 rows from data/raw/user_interactions.csv","logger":"csv_ingestion","filename":"csv_ingestion.py","lineno":39}
+{"timestamp":"2026-01-22T18:14:24.207939Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [csv_ingestion.py:40] - Columns: ['user_id', 'item_id', 'rating', 'timestamp']","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.207935Z","level":"info","event":"Columns: ['user_id', 'item_id', 'rating', 'timestamp']","logger":"csv_ingestion","filename":"csv_ingestion.py","lineno":40}
+{"timestamp":"2026-01-22T18:14:24.208773Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [csv_ingestion.py:41] - Shape: (9910, 4)","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.208769Z","level":"info","event":"Shape: (9910, 4)","logger":"csv_ingestion","filename":"csv_ingestion.py","lineno":41}
+{"timestamp":"2026-01-22T18:14:24.218049Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [csv_ingestion.py:50] - Saved raw data to: data/raw/user_behavior/2026/01/22/interactions/interactions_20260122_234424.csv","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.218047Z","level":"info","event":"Saved raw data to: data/raw/user_behavior/2026/01/22/interactions/interactions_20260122_234424.csv","logger":"csv_ingestion","filename":"csv_ingestion.py","lineno":50}
+{"timestamp":"2026-01-22T18:14:24.219020Z","level":"error","event":"2026-01-22 23:44:24 - csv_ingestion - INFO - [logger.py:65] - Completed csv_ingestion in 0.02s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T18:14:24.219016Z","level":"info","event":"Completed csv_ingestion in 0.02s","logger":"csv_ingestion","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T18:14:24.227491Z","level":"info","event":"Ingested 9910 interactions","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:14:24.227603Z","level":"info","event":"Done. Returned value was: data/raw/user_behavior/2026/01/22/interactions/interactions_20260122_234424.csv","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T18:14:24.227696Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019be6ea-117c-7c91-847f-8b6c51c0e9e1'), task_id='ingest_csv', dag_id='recomart_recommendation_pipeline', run_id='manual__2026-01-22T18:14:08+00:00', try_number=1, dag_version_id=UUID('019be483-4b20-7641-8635-67f364380c0a'), map_index=-1, hostname='apinto-mbp', context_carrier={}, task=<Task(PythonOperator): ingest_csv>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 1, 22, 18, 14, 21, 220155, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1357}
+{"timestamp":"2026-01-22T18:14:24.237695Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:14:24.237737Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:14:24.238237Z","level":"info","event":"Task operator:<Task(PythonOperator): ingest_csv>","logger":"task.stdout"}

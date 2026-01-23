@@ -1,0 +1,26 @@
+{"timestamp":"2026-01-22T06:28:28.843867Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T06:28:28.844174Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T06:28:30.438600Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2026-01-22T06:28:30.451022Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:30.451108Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:30.451454Z","level":"info","event":"Current task name:save_to_feature_store","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:30.451485Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:30.452296Z","level":"info","event":"Saving to feature store...","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:30.515089Z","level":"error","event":"2026-01-22 11:58:30 - feature_store - INFO - [logger.py:58] - Starting feature_store","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:30.515086Z","level":"info","event":"Starting feature_store","logger":"feature_store","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T06:28:30.516503Z","level":"error","event":"2026-01-22 11:58:30 - feature_store - INFO - [feature_store.py:65] - Registered feature: user_features_v1","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:30.516504Z","level":"info","event":"Registered feature: user_features_v1","logger":"feature_store","filename":"feature_store.py","lineno":65}
+{"timestamp":"2026-01-22T06:28:30.517567Z","level":"error","event":"2026-01-22 11:58:30 - feature_store - INFO - [logger.py:65] - Completed feature_store in 0.00s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:30.517564Z","level":"info","event":"Completed feature_store in 0.00s","logger":"feature_store","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T06:28:30.519343Z","level":"error","event":"2026-01-22 11:58:30 - feature_store - INFO - [logger.py:58] - Starting feature_store","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:30.519345Z","level":"info","event":"Starting feature_store","logger":"feature_store","filename":"logger.py","lineno":58}
+{"timestamp":"2026-01-22T06:28:30.520562Z","level":"error","event":"2026-01-22 11:58:30 - feature_store - INFO - [feature_store.py:65] - Registered feature: item_features_v1","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:30.520563Z","level":"info","event":"Registered feature: item_features_v1","logger":"feature_store","filename":"feature_store.py","lineno":65}
+{"timestamp":"2026-01-22T06:28:30.521705Z","level":"error","event":"2026-01-22 11:58:30 - feature_store - INFO - [logger.py:65] - Completed feature_store in 0.00s","logger":"task.stderr"}
+{"timestamp":"2026-01-22T06:28:30.521716Z","level":"info","event":"Completed feature_store in 0.00s","logger":"feature_store","filename":"logger.py","lineno":65}
+{"timestamp":"2026-01-22T06:28:30.521785Z","level":"info","event":"Features registered in feature store","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:30.521969Z","level":"info","event":"Done. Returned value was: True","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T06:28:30.522054Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019be463-a492-7cf8-847b-971944d10973'), task_id='save_to_feature_store', dag_id='recomart_recommendation_pipeline', run_id='manual__2026-01-22T06:28:13+00:00', try_number=1, dag_version_id=UUID('019be463-76a8-72eb-8a68-4289b61bd85f'), map_index=-1, hostname='apinto-mbp', context_carrier={}, task=<Task(PythonOperator): save_to_feature_store>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 1, 22, 6, 28, 28, 433290, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1357}
+{"timestamp":"2026-01-22T06:28:30.533442Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:30.533497Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T06:28:30.534086Z","level":"info","event":"Task operator:<Task(PythonOperator): save_to_feature_store>","logger":"task.stdout"}

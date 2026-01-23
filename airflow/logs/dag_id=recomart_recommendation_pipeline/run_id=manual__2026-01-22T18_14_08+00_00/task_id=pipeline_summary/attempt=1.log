@@ -1,0 +1,23 @@
+{"timestamp":"2026-01-22T18:15:06.287488Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-22T18:15:06.287783Z","level":"info","event":"Filling up the DagBag from /Users/apinto/Documents/BITS WILP/Sem2/Assignment/recomart_pipeline/airflow/dags/airflow_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-22T18:15:07.746484Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.746677Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.747076Z","level":"info","event":"Current task name:pipeline_summary","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.747133Z","level":"info","event":"Dag name:recomart_recommendation_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771506Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771669Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771710Z","level":"info","event":"PIPELINE EXECUTION SUMMARY","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771741Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771775Z","level":"info","event":"execution_date: 2026-01-22 18:14:08+00:00","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771801Z","level":"info","event":"interactions_ingested: 9910","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771842Z","level":"info","event":"products_ingested: 20","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771867Z","level":"info","event":"quality_score: 100.0","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771890Z","level":"info","event":"cleaned_records: 9910","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771912Z","level":"info","event":"rmse: 2.404691848444154","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771934Z","level":"info","event":"mae: 1.942986881937437","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771963Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.771708Z","level":"info","event":"Done. Returned value was: {'execution_date': '2026-01-22 18:14:08+00:00', 'interactions_ingested': 9910, 'products_ingested': 20, 'quality_score': np.float64(100.0), 'cleaned_records': 9910, 'rmse': 2.404691848444154, 'mae': 1.942986881937437}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-22T18:15:07.771858Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019be6ea-bb98-73e5-84b0-d54ded07e7c0'), task_id='pipeline_summary', dag_id='recomart_recommendation_pipeline', run_id='manual__2026-01-22T18:14:08+00:00', try_number=1, dag_version_id=UUID('019be483-4b20-7641-8635-67f364380c0a'), map_index=-1, hostname='apinto-mbp', context_carrier={}, task=<Task(PythonOperator): pipeline_summary>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 1, 22, 18, 15, 5, 848476, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1357}
+{"timestamp":"2026-01-22T18:15:07.779649Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.779697Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-22T18:15:07.780281Z","level":"info","event":"Task operator:<Task(PythonOperator): pipeline_summary>","logger":"task.stdout"}
