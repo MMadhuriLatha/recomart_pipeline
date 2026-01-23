@@ -327,7 +327,7 @@ def orchestrator():
         # print(f"  Test samples: {len(results['test_df'])}")
         
         # Train collaborative filtering model
-        results_cf = trainer.train_and_evaluate(user_interactions_df=cleaned_interactions, n_factors=50, test_size=0.2, model_type='collaborative')
+        results_cf = trainer.train_and_evaluate(user_interactions_df=cleaned_interactions, n_factors=20, test_size=0.2, model_type='collaborative')
         print(f"\nCollaborative Filtering Metrics:")
         print(f"RMSE: {results_cf['metrics']['rmse']:.4f}")
         print(f"MAE: {results_cf['metrics']['mae']:.4f}")
@@ -399,7 +399,7 @@ def orchestrator():
         print_header("PIPELINE COMPLETED SUCCESSFULLY ✓")
     
         print("\nNext Steps:")
-        print("1. Review data quality report: reports/data_quality_report_after_cleaning.pdf")
+        print("1. Review data quality report: reports/data_quality_report.json")
         print("2. Check MLflow experiments: mlflow ui")
         print("3. Set up Airflow DAG: orchestration/airflow_dag.py")
         print("4. Version data with DVC")
