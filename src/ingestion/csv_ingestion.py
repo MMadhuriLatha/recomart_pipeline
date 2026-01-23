@@ -71,9 +71,9 @@ class CSVIngestion:
                         raise
     
     def generate_sample_data(self):
-        """Generate sample user interaction data with intentional data quality issues."""
+        """Generate sample user interaction data for testing"""
         with PipelineLogger(self.logger_name) as logger:
-            logger.info("Generating sample user interaction data with intentional data quality issues")
+            logger.info("Generating sample user interaction data")
             
             np.random.seed(42)
             
@@ -81,38 +81,22 @@ class CSVIngestion:
             n_items = 500
             n_interactions = 10000
             
-            # Generate clean data
             data = {
                 'user_id': np.random.randint(1, n_users + 1, n_interactions),
                 'item_id': np.random.randint(1, n_items + 1, n_interactions),
-                'rating': np.random.randint(1, 6, n_interactions),  # Ratings between 1 and 5
+                'rating': np.random.randint(1, 6, n_interactions),
                 'timestamp': pd.date_range('2024-01-01', periods=n_interactions, freq='1H')
             }
             
             df = pd.DataFrame(data)
             
-            # Introduce intentional data quality issues
-            # 1. Add missing values
-            missing_indices = np.random.choice(df.index, size=100, replace=False)  # Randomly select 100 rows
-            df.loc[missing_indices, 'rating'] = np.nan  # Set 'rating' to NaN
+            df = df.drop_duplicates(subset=['user_id', 'item_id'], keep='last')
             
-            # 2. Add duplicate rows
-            duplicate_rows = df.sample(50, random_state=42)  # Randomly select 50 rows to duplicate
-            df = pd.concat([df, duplicate_rows], ignore_index=True)
-            
-            # 3. Add out-of-range ratings
-            out_of_range_indices = np.random.choice(df.index, size=20, replace=False)  # Randomly select 20 rows
-            df.loc[out_of_range_indices, 'rating'] = np.random.choice([0, 6], size=20)  # Ratings outside 1-5
-            
-            # 4. Add schema mismatch (extra column)
-            df['extra_column'] = 'unexpected_value'
-            
-            # Save the sample data to a CSV file
-            sample_path = Path('data/batch/user_interactions.csv')
+            sample_path = Path('data/raw/user_interactions.csv')
             sample_path.parent.mkdir(parents=True, exist_ok=True)
             df.to_csv(sample_path, index=False)
             
-            logger.info(f"Generated {len(df)} sample interactions with data quality issues")
+            logger.info(f"Generated {len(df)} sample interactions")
             logger.info(f"Saved to: {sample_path}")
             
             return df
@@ -122,14 +106,8 @@ if __name__ == "__main__":
     
     sample_df = ingestion.generate_sample_data()
     
-    print("TEST HEAD: {}".format(sample_df.head(20)))
-    print("Missing values:\n", sample_df.isnull().sum())  # Check for missing values
-    print("Duplicate rows:", sample_df.duplicated(subset=['user_id', 'item_id']).sum())  # Check for duplicates
-    print("Rating statistics:\n", sample_df['rating'].describe())  # Check for out-of-range values
-    print("Columns:", sample_df.columns)  # Check for extra columns
-    
     df, saved_path = ingestion.ingest_file(
-        'data/batch/user_interactions.csv',
+        'data/raw/user_interactions.csv',
         source_name='user_behavior',
         data_type='interactions'
     )
