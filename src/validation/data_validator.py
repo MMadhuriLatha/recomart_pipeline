@@ -238,6 +238,12 @@ class DataValidator:
         
         pdf.output(pdf_file)
         print(f"PDF report saved to {pdf_file}")
+    
+    def save_processed_data(self, df: pd.DataFrame, output_path: str):
+        """Saves the validated dataframe to the processed folder"""
+        Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+        df.to_csv(output_path, index=False)
+        print(f"Data successfully saved to {output_path}")
 
 if __name__ == "__main__":
     df = pd.read_csv('data/raw/user_interactions.csv')
@@ -246,6 +252,7 @@ if __name__ == "__main__":
     results = validator.validate_interactions(df)
     validator.generate_report()
     validator.generate_pdf_report(
-        json_file="reports/data_quality_report.json",
         pdf_file="reports/data_quality_report.pdf"
     )
+    validator.save_processed_data(df, 'data/processed/interactions_cleaned.csv')
+    
